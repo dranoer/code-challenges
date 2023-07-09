@@ -2,15 +2,28 @@ package com.dranoer.codingchallenges
 
 fun main() {
 
+    print("Enter Rectangle A info: ")
+    val ax1 = readLine()?.toIntOrNull()
+    val ax2 = readLine()?.toIntOrNull()
+    val ay1 = readLine()?.toIntOrNull()
+    val ay2 = readLine()?.toIntOrNull()
+
+    print("Enter Rectangle B info: ")
+    val bx1 = readLine()?.toIntOrNull()
+    val bx2 = readLine()?.toIntOrNull()
+    val by1 = readLine()?.toIntOrNull()
+    val by2 = readLine()?.toIntOrNull()
+
+
     val result = recIntersect(
-        A = Rectangle(x1 = 1, y1 = 1, x2 = 2, y2 = 2),
-        B = Rectangle(x1 = 3, y1 = 1, x2 = 4, y2 = 2),
+        A = Rectangle(ax1!!, ax2!!, ay1!!, ay2!!),
+        B = Rectangle(bx1!!, bx2!!, by1!!, by2!!)
     )
 
-    println(result)
+    println("This is $result that rectangle A & B have intersect")
 }
 
-data class Rectangle(val x1: Int, val y1: Int, val x2: Int, val y2: Int)
+data class Rectangle(val x1: Int, val x2: Int, val y1: Int, val y2: Int)
 
 fun recIntersect(
     A: Rectangle,
