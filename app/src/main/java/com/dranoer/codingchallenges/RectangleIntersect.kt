@@ -1,6 +1,7 @@
 package com.dranoer.codingchallenges
 
-/* out Find if two given rectangle
+/*
+    Find out if two given rectangle
     have any intersects
 */
 

@@ -1,10 +1,10 @@
 package com.dranoer.codingchallenges
 
-/* Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
-
+/*
+    Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
     example:
-    Input: nums = [1,2,3,2,1,4,3]
-    Output: 4
+        Input: nums = [1,2,3,2,1,4,3]
+        Output: 4
  */
 
 fun main() {
