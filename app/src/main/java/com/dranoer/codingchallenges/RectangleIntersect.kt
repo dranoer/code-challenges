@@ -1,5 +1,9 @@
 package com.dranoer.codingchallenges
 
+/* out Find if two given rectangle
+    have any intersects
+*/
+
 fun main() {
 
     val rectA = promptForRectangle("A")
