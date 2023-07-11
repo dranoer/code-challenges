@@ -3,26 +3,26 @@ package com.dranoer.codingchallenges
 fun main() {
 
     val questions = listOf(
-        question(
+        Question(
             id = "1",
             title = "how do i install vs code",
-            tags = listOf(tag(tag = "mac"), tag("vs code"))
+            tags = listOf(Tag(tag = "mac"), Tag("vs code"))
         ),
-        question(
+        Question(
             id = "2",
             title = "my program is too slow please help",
-            tags = listOf(tag(tag = "python"), tag(tag = "ai"))
+            tags = listOf(Tag(tag = "python"), Tag(tag = "ai"))
         )
     )
 
     val volunteers = listOf(
-        volunteers(
+        Volunteers(
             id = "sam5k",
-            tags = listOf(tag(tag = "mac"), tag("vs code"))
+            tags = listOf(Tag(tag = "mac"), Tag("vs code"))
         ),
-        volunteers(
+        Volunteers(
             id = "a",
-            tags = listOf(tag(tag = "python"))
+            tags = listOf(Tag(tag = "python"))
         )
     )
 
@@ -30,15 +30,15 @@ fun main() {
     println("The response should contain response ${visibleResponse}")
 }
 
-fun solution(questionList: List<question>, volunteerList: List<volunteers>): List<response> {
+fun solution(questionList: List<Question>, volunteerList: List<Volunteers>): List<Response> {
 
-    var response = mutableListOf<response>()
+    val response = mutableListOf<Response>()
 
     // Search in questions, volunteer
     for (question in questionList) {
         for (volunteer in volunteerList) {
             val a = volunteer.tags.any { question.tags.contains(it) }
-            if (a) response.add(response(questionId = question.id, volunteer = volunteer.id))
+            if (a) response.add(Response(questionId = question.id, volunteer = volunteer.id))
         }
     }
 
@@ -46,22 +46,22 @@ fun solution(questionList: List<question>, volunteerList: List<volunteers>): Lis
     return response
 }
 
-data class question(
+data class Question(
     val id: String,
     val title: String,
-    val tags: List<tag>,
+    val tags: List<Tag>,
 )
 
-data class tag(
+data class Volunteers(
+    val id: String,
+    val tags: List<Tag>
+)
+
+data class Tag(
     val tag: String,
 )
 
-data class volunteers(
-    val id: String,
-    val tags: List<tag>
-)
-
-data class response(
+data class Response(
     val questionId: String,
     val volunteer: String,
 )
