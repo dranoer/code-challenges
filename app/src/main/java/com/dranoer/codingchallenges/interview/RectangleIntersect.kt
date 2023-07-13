@@ -1,4 +1,4 @@
-package com.dranoer.codingchallenges
+package com.dranoer.codingchallenges.interview
 
 /*
     Find out if two given rectangle

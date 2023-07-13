@@ -1,4 +1,4 @@
-package com.dranoer.codingchallenges
+package com.dranoer.codingchallenges.array
 
 /*
     Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.
