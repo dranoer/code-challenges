@@ -18,7 +18,7 @@ fun main() {
     println(nums.contentToString()) // It should print: [5, 6, 7, 1, 2, 3, 4]
 }
 
-fun rotate(nums: IntArray, k: Int): Unit {
+fun rotate(nums: IntArray, k: Int) {
 
     val n = nums.size
     val rotated = IntArray(n)
