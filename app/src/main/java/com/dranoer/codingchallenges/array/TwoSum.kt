@@ -17,7 +17,7 @@ fun main() {
 
 fun twoSum(nums: IntArray, target: Int): IntArray {
 
-    val map = HashMap<Int, Int>() // Number we process already and their indices
+    val map = HashMap<Int, Int>() // Number we process already and their indices.
 
     for ((index, num) in nums.withIndex()) {
         val complement = target - num
