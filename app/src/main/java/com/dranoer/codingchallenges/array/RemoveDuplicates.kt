@@ -8,7 +8,8 @@ package com.dranoer.codingchallenges.array
  */
 
 fun main() {
-    removeDuplicates(nums = intArrayOf(0, 0, 1, 1, 1, 2, 2, 3, 3, 4))
+    val uniqueCount = removeDuplicates(nums = intArrayOf(0, 0, 1, 1, 1, 2, 2, 3, 3, 4))
+    println("Number of unique elements: $uniqueCount")
 }
 
 fun removeDuplicates(nums: IntArray): Int {
