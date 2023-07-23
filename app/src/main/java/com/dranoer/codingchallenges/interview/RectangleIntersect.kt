@@ -1,8 +1,8 @@
 package com.dranoer.codingchallenges.interview
 
-/*
-    Find out if two given rectangle
-    have any intersects
+/**
+ * Find out if two given rectangle
+ * Have any intersects
 */
 
 fun main() {
